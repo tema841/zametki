@@ -1,8 +1,6 @@
-// index.php — список заметок
 <?php
 require 'db.php';
 
-// Получаем заметки с тегами
 $stmt = $pdo->prepare(
     'SELECT n.*, GROUP_CONCAT(t.name ORDER BY t.name SEPARATOR ", ") AS tags
      FROM notes n

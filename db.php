@@ -1,4 +1,3 @@
-// db.php — подключение к базе
 <?php
 $host = 'localhost';
 $dbname = 'notes_app';
@@ -12,5 +11,5 @@ try {
     die('Ошибка подключения: ' . $e->getMessage());
 }
 
-// Хардкодим пользователя (id=1)
 $currentUserId = 1;
+?>
